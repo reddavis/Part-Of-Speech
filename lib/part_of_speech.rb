@@ -115,7 +115,7 @@ class PartOfSpeech
     return unless index > 0
 
     if @pos[index-1] =~ /^NN/  && @pos[index] =~ /^NN/ 
-      if @lexicon[text[index]].include?("VBN")
+      if @lexicon[@text[index]].include?("VBN")
         @pos[index] = "VBN"
       end
       if @lexicon[@text[index]].include?("VBZ")
