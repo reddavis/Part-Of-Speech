@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/corpus/lexicon.txt",
      "lib/part_of_speech.rb",
+     "part_of_speech.gemspec",
      "spec/part_of_speech_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
