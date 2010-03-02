@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{part_of_speech}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["reddavis"]
-  s.date = %q{2010-03-01}
+  s.date = %q{2010-03-02}
   s.description = %q{Part of speech tagger based off Mark Watsons code}
   s.email = %q{reddavis@gmail.com}
   s.extra_rdoc_files = [
@@ -23,9 +23,9 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "lib/corpus/lexicon.txt",
      "lib/part_of_speech.rb",
      "part_of_speech.gemspec",
+     "spec/files/lexicon.txt",
      "spec/part_of_speech_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
