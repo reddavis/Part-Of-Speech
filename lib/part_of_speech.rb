@@ -16,7 +16,7 @@ class PartOfSpeech
   end
   
   def tag(text)
-    @text = text.split(/ |,|\.|\:|\;|\'/)
+    @text = text.split(/\s+|,\s+|\.\s+|\:\s+|\;\s+|\'\s+/)
     
     @pos = []
     @text.each do |word|
