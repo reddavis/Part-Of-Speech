@@ -9,6 +9,10 @@ def text_sample
   In addition to simply pulling out the phrases, it is common to do some simple post processing to link variants together (For example, unpluralizing plural variants)."
 end
 
+def lexicon_path
+  File.expand_path(File.dirname(__FILE__) + '/files/lexicon.txt')
+end
+
 Spec::Runner.configure do |config|
   
 end

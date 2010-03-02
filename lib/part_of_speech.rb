@@ -1,22 +1,22 @@
 class PartOfSpeech
   
   class << self
-    def analyze(text)
-      new.tag(text)
+    def analyze(lexicon_path, text)
+      new(lexicon_path).tag(text)
     end
   end
   
   # Place corpus into memory
-  def initialize
+  def initialize(lexicon_path)
     @lexicons = Hash.new {|hash, k| hash[k] = []}
-    File.open(corpus_path).each do |line|
+    File.open(lexicon_path, 'r').each do |line|
       line = line.split
       @lexicons[line.shift] = line
     end
   end
   
   def tag(text)
-    @text = text.split(/\s|\.|,|\:|\;|\'/)
+    @text = text.split(/ |,|\.|\:|\;|\'/)
     
     @pos = []
     @text.each do |word|

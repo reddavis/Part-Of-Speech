@@ -9,6 +9,8 @@ I've just cleaned it up a little bit and packaged it into a gem.
   gem sources -a http://gemcutter.org
   sudo gem install part_of_speech
   
+You can download a lexicon list from http://github.com/downloads/reddavis/Part-Of-Speech/lexicon.txt
+  
 == How To Use
 
   require 'rubygems'
@@ -16,7 +18,7 @@ I've just cleaned it up a little bit and packaged it into a gem.
   
   text = "This is some text that I want analyzing"
   
-  PartOfSpeechTagger.analyze(text)
+  PartOfSpeechTagger.analyze(lexicon_path, text)
     #=> [["This", "DT"], ["is", "VBZ"], ["some", "DT"], ["text", "NN"], ["that", "IN"], ["I", "PRP"], ["want", "VBP"], ["analyzing", "VBG"]]
     
 == What Do These Letters Mean?
