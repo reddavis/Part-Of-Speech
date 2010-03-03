@@ -123,9 +123,5 @@ class PartOfSpeech
       end
     end
   end
-      
-  def corpus_path
-    File.expand_path(File.dirname(__FILE__) + '/corpus/lexicon.txt')
-  end
-  
+        
 end
